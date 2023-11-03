@@ -297,3 +297,25 @@ int CLOOK()
 // Total head movement is 341
 // Do u want to continue IF YES PRESS 1
 // IF NO PRESS 0: 0
+
+
+
+/*Scheduling algorithms in operating systems are used to determine the order in which processes are executed on a CPU or the order in which disk I/O requests are serviced. Here's a short summary of how three common disk scheduling algorithms—SSTF (Shortest Seek Time First), SCAN, and C-LOOK—work:
+
+1. SSTF (Shortest Seek Time First):
+   - SSTF is a disk scheduling algorithm used to reduce seek time on a hard disk drive.
+   - It selects the I/O request that is closest to the current position of the disk's read/write head.
+   - The goal is to minimize the seek time, which is the time it takes for the disk head to move to the desired track.
+   - SSTF can lead to starvation of some requests if there are always new requests arriving closer to the current head position.
+
+2. SCAN (Elevator Algorithm):
+   - SCAN, also known as the "elevator algorithm," moves the disk head in one direction until it reaches the end of the disk or the end of the request queue.
+   - Once it reaches the end, it reverses direction and scans back in the opposite direction.
+   - This approach minimizes seek time for I/O requests along the path of the head's movement, and it helps prevent starvation, as it eventually services all requests in both directions.
+
+3. C-LOOK (Circular LOOK):
+   - C-LOOK is a variation of the LOOK disk scheduling algorithm and is designed to minimize seek time while avoiding the unfairness of the standard LOOK algorithm.
+   - It scans in one direction, servicing requests until there are no more in that direction, and then it quickly returns to the beginning of the disk (the "circular" part).
+   - This approach eliminates the problem of starvation present in the standard LOOK algorithm and can provide fairer service to all requests.
+
+These scheduling algorithms are primarily used for disk I/O requests, with the aim of reducing seek time and improving overall system performance. The choice of algorithm depends on the specific system requirements and workload. SSTF focuses on minimizing seek time, SCAN prevents starvation and provides fair service, and C-LOOK is a variant that also balances seek time and fairness in servicing disk requests.*/
