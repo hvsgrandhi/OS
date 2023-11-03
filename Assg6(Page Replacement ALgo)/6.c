@@ -354,3 +354,24 @@ void lru(char string[], int frameSize, int count)
 // 3.Optimal
 // 4.Exit
 // Your Choice:4
+
+
+
+/*Page replacement algorithms are used in operating systems to manage the allocation of memory (typically RAM) to various processes and to determine which pages (or memory blocks) to evict from memory when it becomes full. Here's a short summary of how three common page replacement algorithms work:
+
+1. First-Come, First-Served (FCFS):
+   - FCFS is a simple page replacement algorithm that evicts the oldest page in memory.
+   - When a page fault occurs and memory is full, the page that has been in memory the longest is replaced.
+   - It doesn't consider the usefulness of pages, leading to inefficient memory utilization and potentially causing the "Belady's Anomaly," where increasing the number of allocated frames may actually increase page faults.
+
+2. Least Recently Used (LRU):
+   - LRU replaces the page that has not been used for the longest period of time.
+   - It maintains a record of the order in which pages were accessed, and when a page fault occurs, it replaces the page that has not been accessed for the most extended period.
+   - LRU is effective at minimizing page faults but can be challenging to implement efficiently, especially in systems with many pages.
+
+3. Optimal Page Replacement:
+   - Optimal page replacement, also known as the "Belady's Algorithm," selects the page for replacement that will not be used for the longest time in the future.
+   - While it provides the best possible page replacement strategy in terms of minimizing page faults, it is also impractical for real-time systems because it requires knowledge of future page references, which is usually not available.
+   - Optimal page replacement is used as a reference point to measure the performance of other algorithms.
+
+Each of these page replacement algorithms has its advantages and disadvantages. FCFS is straightforward but not very efficient, while LRU is effective but can be complex to implement. Optimal provides the best possible performance but is not practical for most real-world scenarios. In practice, operating systems often use a combination of these or other algorithms to strike a balance between performance and implementation complexity.*/
