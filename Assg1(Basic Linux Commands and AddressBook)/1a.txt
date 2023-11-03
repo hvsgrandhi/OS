@@ -1,0 +1,33 @@
+pwd - display location of current directory
+
+cd - used to change directory
+
+echo - used to display messages or variables on the terminal
+
+ls - lists all the files and directory in the current directory
+
+read - allows you to read input from user and assign a variables
+
+mkdir - used to create directory
+
+cat - used to display content of the file in terminal
+
+touch - used to create empty files
+
+cp - used to copy a file or directory
+
+rm - used to remove a file
+
+test - used for file test and string comparisions
+
+rename - used to rename files
+
+head - used to display content of the file, first 10 lines of the file
+
+tail - display last 10 lines of the file
+
+tac - reverse of cat, displays content in reverse order
+
+id - used to display the user ID (UID) and group ID(GID)
+
+grep - used for pattern matching in text, searches for a specified pattern and prints the matching lines
