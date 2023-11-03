@@ -181,4 +181,19 @@ int safetyalgorithm(int available[m], int safesequence[n])
 // P3 2 1 1 2 2 2 0 1 1
 // P4 0 0 2 4 3 3 4 3 1
 // SYSTEM IS IN SAFE STATE...
+
 // safesequence is: P1 -> P3 -> P4 -> P0 -> P2 -> comp123@comp123:~/Desktop/os/5$
+
+/*The Banker's Algorithm is a resource allocation and deadlock avoidance technique used in operating systems to ensure that processes request and release resources in a way that prevents deadlock. It works as follows:
+
+1. Initialization: The algorithm starts with an initial allocation of resources and a maximum demand for each process. It also maintains a record of available resources.
+
+2. Request Phase: When a process requests additional resources, the system checks if granting those resources will result in a safe state, i.e., it won't lead to a deadlock. If the request can be satisfied without compromising the safety of the system, the resources are allocated; otherwise, the process must wait.
+
+3. Release Phase: When a process is done with its resources, it releases them back to the system.
+
+4. Safety Check: The algorithm periodically checks if the system is in a safe state, meaning it can allocate resources to processes in such a way that they can complete their execution and release their resources. If a safe sequence of resource allocation can be found, the system proceeds; otherwise, it waits for resources to become available.
+
+The Banker's Algorithm uses the concepts of available resources, maximum resource demands, and allocated resources to determine whether the system can satisfy a process's request without causing a potential deadlock. If a deadlock is detected, the algorithm prevents resource allocation until the system is in a safe state.
+
+By carefully managing resource allocation and monitoring for potential deadlocks, the Banker's Algorithm helps ensure the stability and reliability of an operating system.*/
